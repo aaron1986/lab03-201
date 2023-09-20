@@ -1,4 +1,4 @@
-let letters = ["a", "b", "c", "d", "e"];
+/* let letters = ["a", "b", "c", "d", "e"];
 
 let user = prompt("Enter a letter ").toLowerCase();
 let Regex='!/^[a-zA-Z]+$/';
@@ -19,8 +19,34 @@ for(i = 0; i < letters.length; i++) {
     } 
 
 } 
+ */
 
-let user2 = prompt("Wrong Answer try again...").toLowerCase();
+
+
+    let userPoints = 0;
+    let user = prompt("what is your name ");
+
+    alert("Hello " + user + ". Would you like to play a game?");
+
+    let videoGames = ["GTA","Pac Man", "Zelda","Monkey Island", "Doom", "Wonder Boy"];
+
+    let answer = prompt("Guess Aaron's favourite Video Game Series").toLowerCase();
+
+    for(let i = 0; i < videoGames.length; i++) {
+        if(answer === videoGames[i]) {
+            console.log("working!");
+            alert("correct");
+            userPoints++;
+        } 
+    }
+
+    if(videoGames.indexOf(answer) >= 0) {
+        alert("You got it right!");
+        userPoints++;
+    }
+
+    alert("You got " + userPoints + "/1 questions correct");
+
 
 
 
@@ -51,6 +77,3 @@ if(!letterFound) {
     console.log("Wrong answer");
 } */
 
-
-
-let videoGames = ["GTA", "Mario", "Pac Man", "Monkey Island"];

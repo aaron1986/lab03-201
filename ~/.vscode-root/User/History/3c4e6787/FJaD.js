@@ -1,4 +1,4 @@
-let letters = ["a", "b", "c", "d", "e"];
+/* let letters = ["a", "b", "c", "d", "e"];
 
 let user = prompt("Enter a letter ").toLowerCase();
 let Regex='!/^[a-zA-Z]+$/';
@@ -19,13 +19,37 @@ for(i = 0; i < letters.length; i++) {
     } 
 
 } 
+ */
 
-let user2 = prompt("Wrong Answer try again...").toLowerCase();
-if(!letterFound) {
-    console.log("Wrong Answer...");
-    user2 = prompt("Wrong Answer try again...").toLowerCase();
+
+/* I had an error whereupon when I entered the array list as uppercase but 
+included the keyword toLowerCase() the code would not run correctly; A big 
+thank you to CJ for finding the mistake.
+
+*/
+
+function guessingGame() {
+
+    let userPoints = 0;
+    let user = prompt("what is your name ");
+
+    alert("Hello " + user + ". Would you like to play a game?");
+
+    let videoGames = ["gta","pac man", "zelda","monkey island", "doom", "wonder boy"];
+
+    let answer = prompt("Guess Aaron's favourite Video Game Series").toLowerCase();
+
+    for(let i = 0; i < videoGames.length; i++) {
+        if(answer === videoGames[i]) {
+            console.log("working!");
+            alert("correct");
+            userPoints++;
+        } 
+    }
+
+    alert("You got " + userPoints + "/1 questions correct");
 }
-
+    
 
 /* 
 let letters = ["a", "b", "c", "d", "e"];
@@ -53,6 +77,3 @@ if(!letterFound) {
     console.log("Wrong answer");
 } */
 
-
-
-let videoGames = ["GTA", "Mario", "Pac Man", "Monkey Island"];

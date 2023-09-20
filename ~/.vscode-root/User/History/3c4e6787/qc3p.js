@@ -22,17 +22,32 @@ for(i = 0; i < letters.length; i++) {
  */
 
 
-let videoGames = ["GTA","Pac Man", "Zelda","Monkey Island", "Doom", "Wonder Boy"];
 
-let videoAnswer = prompt("Guess Aaron's favourite Video Game Series").toLowerCase();
+    let userPoints = 0;
+    let user = prompt("what is your name ");
 
-for(i = 0; i < videoGames.length; i++) {
-    if(videoAnswer === videoGames[i]) {
-        document.write("Correct Answer!");
-        break;
-    } 
+    alert("Hello " + user + ". Would you like to play a game?");
 
-} 
+    let videoGames = ["GTA","PacMan", "Zelda","MonkeyIsland", "Doom", "WonderBoy"];
+
+    let answer = prompt("Guess Aaron's favourite Video Game Series").toLowerCase();
+
+    for(let i = 0; i < videoGames.length; i++) {
+        if(answer === videoGames[i]) {
+            console.log("working!");
+            alert("correct");
+            userPoints++;
+        } 
+    }
+
+    if(videoGames.indexOf(answer) >= 0) {
+        alert("You got it right!");
+        userPoints++;
+    }
+
+    alert("You got " + userPoints + "/1 questions correct");
+
+
 
 
 

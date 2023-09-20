@@ -21,22 +21,34 @@ for(i = 0; i < letters.length; i++) {
 } 
  */
 
-function guessGame() {
-    let videoGames = ["GTA","Pac Man", "Zelda","Monkey Island", "Doom", "Wonder Boy"];
 
-    let videoAnswer = prompt("Guess Aaron's favourite Video Game Series").toLowerCase();
-    
-    for(i = 0; i < videoGames.length; i++) {
-        if(videoAnswer === videoGames[i]) {
-            document.write("Correct Answer!");
-            break;
+/* I had an error whereupon when I entered the array list as uppercase but 
+included the keyword toLowerCase(); A big thanbk to CJ for finding the mistake
+
+*/
+
+function guessingGame() {
+
+    let userPoints = 0;
+    let user = prompt("what is your name ");
+
+    alert("Hello " + user + ". Would you like to play a game?");
+
+    let videoGames = ["gta","pac man", "zelda","monkey island", "doom", "wonder boy"];
+
+    let answer = prompt("Guess Aaron's favourite Video Game Series").toLowerCase();
+
+    for(let i = 0; i < videoGames.length; i++) {
+        if(answer === videoGames[i]) {
+            console.log("working!");
+            alert("correct");
+            userPoints++;
         } 
-    
     }
+
+    alert("You got " + userPoints + "/1 questions correct");
 }
- 
-
-
+    
 
 /* 
 let letters = ["a", "b", "c", "d", "e"];

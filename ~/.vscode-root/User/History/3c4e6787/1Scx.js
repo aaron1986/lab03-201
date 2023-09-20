@@ -1,4 +1,4 @@
-/*  let letters = ["a", "b", "c", "d", "e"];
+ let letters = ["a", "b", "c", "d", "e"];
 
 let user = prompt("Enter a letter ").toLowerCase();
 let Regex='!/^[a-zA-Z]+$/';
@@ -22,12 +22,12 @@ for(i = 0; i < letters.length; i++) {
 
 if(!letterFound) {
     console.log("Wrong answer");
-} */
+}
 
 
-/* I had an error whereupon when I entered the array list as uppercase - the 
-code would not run correctly. I made thye mistake of included the keyword 
-toLowerCase(); A big thank you to GJ for finding the mistake.
+/* I had an error whereupon when I entered the array list as uppercase but 
+included the keyword toLowerCase() the code would not run correctly; A big 
+thank you to GJ for finding the mistake.
 
 */
 
@@ -53,34 +53,5 @@ toLowerCase(); A big thank you to GJ for finding the mistake.
     alert("You got " + userPoints + "/1 questions correct");
 }
      */
-
-
-function guessNumber() {
-    let correctNumber = false;
-   
-
-    let guessNumber = [9, 8, 2, 7];
-
-    while(!correctNumber) {
-
-    let userGuess = parseInt(prompt("Guess a number between one and ten"));
-    let points = 0;
-    
-
-    for(let i = 0; i < guessNumber.length; i++) {
-        if(userGuess=== guessNumber[i]) {
-            console.log("Correct you the found the magic number!");
-            points++;
-            correctNumber= true;
-            alert("You have " + points + " point");
-        } 
-    }
-
-    if(!correctNumber) {
-        console.log("Not found try again...");
-    }
-}
-
-    }
 
 

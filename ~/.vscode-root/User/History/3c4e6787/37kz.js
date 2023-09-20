@@ -25,9 +25,9 @@ if(!letterFound) {
 } */
 
 
-/* I had an error whereupon when I entered the array list as uppercase - the 
-code would not run correctly. I made thye mistake of included the keyword 
-toLowerCase(); A big thank you to GJ for finding the mistake.
+/* I had an error whereupon when I entered the array list as uppercase but 
+included the keyword toLowerCase() the code would not run correctly; A big 
+thank you to GJ for finding the mistake.
 
 */
 

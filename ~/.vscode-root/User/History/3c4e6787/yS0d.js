@@ -1,4 +1,4 @@
-let letters = ["a", "b", "c", "d", "e"];
+/* let letters = ["a", "b", "c", "d", "e"];
 
 let user = prompt("Enter a letter ").toLowerCase();
 let Regex='!/^[a-zA-Z]+$/';
@@ -6,7 +6,7 @@ let Regex='!/^[a-zA-Z]+$/';
 
 while(!/^[a-zA-Z]+$/.test(user)){
     console.log("Only letters are allowed ");
-    user = prompt("Enter another Letter ").toLowerCase();
+    user = prompt("Only letters are allowed ").toLowerCase();
 }
 
 let letterFound = false;
@@ -18,12 +18,32 @@ for(i = 0; i < letters.length; i++) {
         break;
     } 
 
-}
+} 
+ */
 
-if(!letterFound) {
-    console.log("Wrong Answer...");
-}
 
+function GuessingGame() {
+
+    let userPoints = 0;
+    let user = prompt("what is your name ");
+
+    alert("Hello " + user + ". Would you like to play a game?");
+
+    let videoGames = ["gta","pac man", "zelda","monkey island", "doom", "wonder boy"];
+
+    let answer = prompt("Guess Aaron's favourite Video Game Series").toLowerCase();
+
+    for(let i = 0; i < videoGames.length; i++) {
+        if(answer === videoGames[i]) {
+            console.log("working!");
+            alert("correct");
+            userPoints++;
+        } 
+    }
+
+    alert("You got " + userPoints + "/1 questions correct");
+}
+    
 
 /* 
 let letters = ["a", "b", "c", "d", "e"];
@@ -51,6 +71,3 @@ if(!letterFound) {
     console.log("Wrong answer");
 } */
 
-
-
-let videoGames = ["GTA", "Mario", "Pac Man", "Monkey Island"];
